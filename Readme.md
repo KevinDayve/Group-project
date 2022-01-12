@@ -46,6 +46,7 @@ But before we do anything, we would first want to install python, which you can 
 So, that should do it. Remember, any time you want to perform a sequence extraction make sure all the file are in the same folder.
 
 ## Acknowledgements:
+While everyone contributed in some way to the project, but ultimately it was categorised as:
 
 |**Name**     |**Role**   |
 |---------|-------|
