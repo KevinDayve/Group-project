@@ -20,20 +20,20 @@ In this case, our sequences of interest were the four genes comprising of the ly
 Now move both of them (the .faa/.fa file and the .txt file) to the folder which contains the Blast software. To make a local blast database, you need to:
 * Open the command prompt (Make **sure** that both the files in the same folder as your blast software).
 * Use the **makeblastdb** command to create a new database, So the command in this instance would look like this: makeblastdb -in name.faa -dbtype prot -  out NewYersinia
-     - Here db stands for database,
-     - the -in command asks you for the name of your .faa or .fa file which contains the series of sequences.
-     - -dbtype is the type of database you want to create, in our case, we need a protein database so we type 'prot'.
-     - and the -out is the name that you want for your database, here we were dealing with a yersinia strain so we named it 'NewYersinia'.
+     - Here **db** stands for database,
+     - the **-in** command asks you for the name of your .faa or .fa file which contains the series of sequences.
+     - **-dbtype** is the type of database you want to create, in our case, we need a protein database so we type 'prot'.
+     - and the **-out** is the name that you want for your database, here we were dealing with a yersinia strain so we named it 'NewYersinia'.
 
 ### Run a local blast.
 You can run a blast search in the command prompt by using the blastp query method. Blastp is used for protein-protein blasts. To run a blast search of your targeted sequences against the now newly created database. You have to:
 * Open the command prompt and type: blastp query Sequence.txt db NewYersinia -out results.txt -outfmt 6
 * Let's break down the above command:
-  - blastp is a keyword you want for a protein-protein blast.
-  - query is again a keyword wherein you have to enter the name of the file on which you want to run the blast, in this case, it was a file called     Sequence.txt
-  - db is where you have to enter the name of the database you want to run the sequence against, here it was NewYersinia.
-  - out is the name of the file you want to contain all your blast results.
-  - outfmt 6 will store the results in a tabular format.
+  - **blastp** is a keyword you want for a protein-protein blast.
+  - **query** is again a keyword wherein you have to enter the name of the file on which you want to run the blast, in this case, it was a file called     Sequence.txt
+  - **db** is where you have to enter the name of the database you want to run the sequence against, here it was NewYersinia.
+  - **out** is the name of the file you want to contain all your blast results.
+  - **outfmt 6** will store the results in a tabular format.
 
 ### Extract Sequence based on IDs.
 Upon interpretation of the BLAST results one may want to peruse more closely into the database and extract it's sequnces based on their accession IDs. 
@@ -47,11 +47,11 @@ So, that should do it. Remember, any time you want to perform a sequence extract
 
 ## Acknowledgements:
 
-|Name     |Role   |
+|**Name**     |**Role**   |
 |---------|-------|
-|Kajal, Yeuchen | Identification & extraction of the gene in the lysis casette |
-|Grace | Preparation of the pipeline and the concomitant jupyter notebook eliciting the same. |
-|Kevin | Producing the code, and the Get started text based markdown file | 
+|**Kajal**, **Yeuchen** | Identification & extraction of the gene in the lysis casette |
+|**Grace** | Preparation of the pipeline and the concomitant jupyter notebook eliciting the same. |
+|**Kevin** | Producing the code, and the Get started text based markdown file | 
 
 
 
