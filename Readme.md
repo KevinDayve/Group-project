@@ -49,7 +49,8 @@ So, that should do it. Remember, any time you want to perform a sequence extract
 
 |**Name**     |**Role**   |
 |---------|-------|
-|**Kajal**, **Yeuchen** | Identification & extraction of the gene in the lysis casette |
+|**Yeuchen** | Identification & extraction of the gene in the lysis casette |
+|**Kajal** | Interpretation and analysis of the BLAST results |
 |**Grace** | Preparation of the pipeline and the concomitant jupyter notebook eliciting the same. |
 |**Kevin** | Producing the code, and the Get started text based markdown file | 
 
